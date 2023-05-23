@@ -1,0 +1,15 @@
+#avail {
+  display: inline; 
+  font-weight: bold; 
+  background-color: white;
+  padding:5px 12px 6px 12px;
+  border-radius: 2px;
+}
+
+.room-form form input{
+  margin: 1px;
+}
+
+#available {
+  margin: 6px 0px 0px 3px;
+}

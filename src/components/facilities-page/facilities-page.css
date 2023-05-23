@@ -1,0 +1,50 @@
+.fac-header {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    margin: auto 10px;
+    font-weight: 900;
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+.fac-list-item{
+    padding: 2rem;
+    background-color: rgba(50, 50, 50, 0.338);
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.fac-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 1rem 2rem;
+}
+
+i {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+.fac-list-item:hover{
+    color: white;
+    background-color: rgba(32, 32, 32, 0.801);
+}
+
+.hr {
+    padding: 2px;
+    background-color: rgba(42, 42, 42, 0.685);
+    border-radius: 2px;
+    width: 70%;
+    margin: auto;
+}
+
+#facilities {
+    background-color: #ecececa5;
+}
+

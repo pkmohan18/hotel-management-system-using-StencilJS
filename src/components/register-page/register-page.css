@@ -1,0 +1,14 @@
+.form-items {
+  display: flex; 
+  justify-content: space-around;
+}
+
+/* @media screen and (max-width: 800px) {
+  *{
+     scroll-behavior: smooth;
+  }
+
+  .home {
+    min-height: 100vh;
+  }
+} */
