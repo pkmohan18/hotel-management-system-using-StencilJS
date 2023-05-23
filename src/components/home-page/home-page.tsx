@@ -28,7 +28,7 @@ export class HomePage {
                 <a href="/">Home</a>
               </div>
               <div class="li">
-                <a href="#">Rooms</a>
+                <a href='/login' onClick={()=>alert("Please Login to Book Rooms!...")}>Rooms</a>
               </div>
               <div class="li">
                 <a href="#facilities">Facilities</a>
@@ -70,7 +70,7 @@ export class HomePage {
             </div>
             <div class="banner2 msg">
               <h6>Check availability</h6>
-              <form onSubmit={() => alert('Please Login!...')}>
+              <form onSubmit={()=>alert("Please Login to Book Rooms!...")} method='post'>
                 <input type="text" name="check-in" id="check-in" placeholder="Check-In Date" onFocus={this.changeToDate.bind(this, 'in')} />
                 <input type="text" name="check-out" id="check-out" placeholder="Check-Out Date" onFocus={this.changeToDate.bind(this, 'out')} />
                 <input type="number" name="adult" id="adult" placeholder="No of adults" />
