@@ -28,16 +28,18 @@ export class HomePage {
                 <a href="/">Home</a>
               </div>
               <div class="li">
-                <a href='/login' onClick={()=>alert("Please Login to Book Rooms!...")}>Rooms</a>
+                <a href="/login" onClick={() => alert('Please Login to Book Rooms!...')}>
+                  Rooms
+                </a>
               </div>
               <div class="li">
                 <a href="#facilities">Facilities</a>
               </div>
               <div class="li">
-                <a href="#contact">Contact Us</a>
+                <a href="#about">About</a>
               </div>
               <div class="li">
-                <a href="#contact">About</a>
+                <a href="#contact">Contact Us</a>
               </div>
             </ul>
           </div>
@@ -70,7 +72,7 @@ export class HomePage {
             </div>
             <div class="banner2 msg">
               <h6>Check availability</h6>
-              <form onSubmit={()=>alert("Please Login to Book Rooms!...")} method='post'>
+              <form onSubmit={() => alert('Please Login to Book Rooms!...')} method="post">
                 <input type="text" name="check-in" id="check-in" placeholder="Check-In Date" onFocus={this.changeToDate.bind(this, 'in')} />
                 <input type="text" name="check-out" id="check-out" placeholder="Check-Out Date" onFocus={this.changeToDate.bind(this, 'out')} />
                 <input type="number" name="adult" id="adult" placeholder="No of adults" />
@@ -109,6 +111,79 @@ export class HomePage {
               <p>Free Laundry Services</p>
             </li>
           </ul>
+        </section>
+        <section id="about">
+          <h1 class="fac-header">About</h1>
+          <div class="hr"></div>
+          <div class="about-container">
+            <div class="about-data">
+              <p class="about-desc-header">Founded in 2023 | Headquarters in Bangalore | 700 employees</p>
+              <p class="about-desc">
+                Designed from the ground up to meet the needs of small businesses, Home Town Hotel is the one hotel software that makes it easy to manage your property, attract
+                more guests, convert direct bookings, maintain your website and take online payments. We give you all the tools you need to run your business your way - even a
+                mobile app to use on-the-go. Our platform is simple, our set-up is quick, and 24/7 help is always just one click away.
+              </p>
+            </div>
+            <div class="image">
+              <img src="../../assets/images/hotel1.jpg" alt="room" id="img1" />
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <h1 class="fac-header">Contact Us</h1>
+          <div class="hr"></div>
+          <div class="con-container">
+            <div class="contact-map">
+              <div class="google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.85409750036!2d77.59631590000001!3d12.888203299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1524c170499d%3A0x9423f8c83d07ee39!2sAmiti%20Software%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1684913111001!5m2!1sen!2sin"
+                  width="400"
+                  height="450"
+                  style={{ border: '0' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <h3>Say hello!</h3> <br />
+                  <p>+91 7483130175</p>
+                  <p>
+                    <a href="mailto:mohanpanathale18@gmail.com">mohanpanathale18@gmail.com</a>
+                  </p>
+                </div>
+                <ul class="social-links">
+                  <li>
+                    <a href="#" title="Facebook">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Youtube">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-form">
+              <h2>Any Queries? Let's talk..</h2>
+              <form action="" method="post">
+                <div class="name-email">
+                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" />
+                  <input type="email" class="form-control" name="email" placeholder="Email" id="email" />
+                </div>
+                <textarea name="message" rows={6} class="form-control" id="message" placeholder="Message"></textarea>
+                <input type="submit" class="form-control submit-btn" value="Submit" style={{float: 'right', borderRadius: '50px'}}/>
+              </form>
+            </div>
+          </div>
         </section>
       </Host>
     );

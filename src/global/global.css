@@ -128,10 +128,15 @@ input[type=submit] {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+a {
+    transition: all 0.3s ease;
 }
 
 footer {
-    background-color: rgb(40, 40, 40);
+    background-color: #1f1f1f;
     height: 100%;
     width: 100%;
     display: flex;
@@ -139,7 +144,7 @@ footer {
     padding: 10px 100px;
     color: white;
     box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.3);
-    border-top: 1px solid white;
+    border-top: 1px solid grey;
 }
 
 footer a{
@@ -151,7 +156,7 @@ footer a:hover {
     color: grey;
 }
 
-.contact {
+.f-contact {
     padding-top: 60px;
     line-height: 30px;
 }
@@ -285,3 +290,10 @@ tr:nth-child(even) {
     width: 100%; 
     top: 45%;
   }
+
+.cright {
+    text-align: center;
+    color: grey;
+    margin-top: auto;
+    font-size: small;
+}
