@@ -176,10 +176,10 @@ export class HomePage {
               <h2>Any Queries? Let's talk..</h2>
               <form action="" method="post">
                 <div class="name-email">
-                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" />
-                  <input type="email" class="form-control" name="email" placeholder="Email" id="email" />
+                  <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required/>
+                  <input type="email" class="form-control" name="email" placeholder="Email" id="email" required/>
                 </div>
-                <textarea name="message" rows={6} class="form-control" id="message" placeholder="Message"></textarea>
+                <textarea name="message" rows={6} class="form-control" id="message" placeholder="Message" required></textarea>
                 <input type="submit" class="form-control submit-btn" value="Submit" style={{float: 'right', borderRadius: '50px'}}/>
               </form>
             </div>
